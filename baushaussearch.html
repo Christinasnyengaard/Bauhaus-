@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <style>
+        .searchfield {
+            width: 210px;
+        }
+
+        .search {
+            height: 40px;
+            line-height: 40px;
+            outline: none;
+            font-size: 14px;
+            transition: width .2s;
+            border: 1px solid #e5e5e5;
+            padding: 10px;
+            font-family: avenir next condensed;
+
+        }
+
+        .button {
+            background: #333;
+            color: #fff;
+            position: relative;
+            float: right;
+            width: 40px;
+            height: 40px;
+            right: 40px;
+            transition: -webkit-transform .1s;
+            transition: transform .1s;
+            transition: transform .1s, -webkit-transform .1s;
+        }
+
+    </style>
+    <div class="searchfield">
+        <input type="search" id="mySearch" class="search" placeholder="Søg">
+        <button onclick="myFunction()" class="button"><img src="icon.png" width="65%"></button>
+
+        <p id="demo"></p>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("mySearch").placeholder;
+            document.getElementById("demo").innerHTML = x;
+        }
+
+    </script>
+
+</body>
+
+</html>
